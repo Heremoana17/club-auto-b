@@ -23,43 +23,118 @@
 </head>
 <body>
     <header class="container-fluid" style="font-family:Montserrat;">
-        <section class="row bg-dark pt-4 pb-2 fw-bold">
-            <div class="col-12 col-lg text-end">
-                <h1 class="text-light fw-bold">CLUB AUTO</h1>
+        <!-- premiere barre du header -->
+        <section class="row  pt-4 pb-2" style="font-size: 0.7em; background-color: var(--gris-foncé); background-repeat: no-repeat;">
+
+            <div class="col-12 d-none col-lg-2 d-lg-block offset-1 text-end">
+                <h1 class="text-light fw-bold h2">CLUB AUTO</h1>
             </div>
-            <div class="col-12 col-lg text-uppercase text-light d-flex">
-                <img src="/photo/icone-adresse.png" alt="" style="height: 50px;">
-                <div >
-                    <p class="container-fluid m-0" style="color:var(--marron);">adresse :</p>
-                    <address class="container-fluid">
-                    <p>avenue charle de gaule <br>
-                    75000 paris</p>
-                    </address>
+
+            <!-- botton tuggle en responssive -->
+            <nav class="col-12 d-md-none navbar navbar-dark navbar-expand-lg" style="background-color: var(--gris-foncé);" >
+                <div class="container-fluid justify-content-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barredenav" aria-controls="barredenav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="barredenav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">accueil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">vente</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">location</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!-- fin button tuggle en responssive -->
+
+            <div class="col-12 d-none col-lg-2 d-lg-block pe-0 text-uppercase text-light">
+                <div class="d-flex">
+                    <img src="/photo/icone-adresse.png" alt="" style="height: 40px;">
+                    <div >
+                        <p class="container-fluid m-0 fw-bold" style="color:var(--marron);">adresse :</p>
+                        <address class="container-fluid">
+                        <p style="font-size: 1.em;">avenue charles de gaule <br>
+                        75000 paris</p>
+                        </address>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-lg text-uppercase text-light d-flex">
-                <img src="/photo/icon-telephone.png" alt="" style="height: 50px;">
+
+            <div class="col-12 col-lg-2  fw-bold text-uppercase text-light justify-content-lg-center d-flex">
+                <img src="/photo/icon-telephone.png" alt="" style="height: 40px;">
                 <div>
                     <p class="container-fluid m-0" style="color:var(--marron);">téléphone :</p>
-                    <p class="container-fluid fs-3">01 23 45 67 89</p>
+                    <p class="container-fluid fs-5">01 23 45 67 89</p>
                 </div>
             </div>
-            <div class="col-12 col-lg text-uppercase text-light d-flex">
-                <p style="color:var(--marron);"> ouverture : <span class="text-capitalize fs-5" style="color:var(--white);"> Du Lundi au Samedi</span><br>
-                    horaires : <span class="text-capitalize fs-5" style="color:var(--white);"> De 9h à 17h</span>
+
+            <div class="col-12 d-none col-lg-2 d-lg-block fw-bold text-uppercase text-light d-flex">
+                <p style="color:var(--marron);"> ouverture : <span class="text-capitalize" style="color:var(--white); font-size: 1.2em;"> Du Lundi au Samedi</span><br>
+                    horaires : <span class="text-capitalize" style="color:var(--white); font-size: 1.2em;"> De 9h à 17h</span>
                 </p>
             </div>
-            <div class="col-12 col-lg text-uppercase text-light">
+
+            <div class="col-12 d-none col-lg-2 d-lg-block text-uppercase text-light">
                 <a href="">
-                    <img src="/photo/icon-fb.png" alt="" class="px-2" style="height: 50px;">
+                    <img src="/photo/icon-fb.png" alt="" class="px-2" style="height: 40px;">
                 </a>
                 <a href="">
-                    <img src="/photo/icon-tw.png" alt="" class="px-2" style="height: 50px;">
+                    <img src="/photo/icon-tw.png" alt="" class="px-2" style="height: 40px;">
                 </a>
             </div>
-            
-
         </section>
+        <!-- fin de la premiere barre du header -->
     </header>
+    
+    <!-- background img -->
+    <div class="container-fluid bg-image d-none d-md-block" style="background-image:url(/photo/vehicule1.jpg); background-repeat: no-repeat; background-size: cover; height: 600px; font-family:Montserrat;"> 
+        <!-- barre de navigation -->
+        <nav class="nav text-uppercase fw-semibold align-items-center bg-white bg-opacity-75" style="font-size: 0.8em; height: 50px; margin-left:-12px; margin-right: -12px;">
+            <div class="nav-item h-100 offset-7 px-1" style="background-color: var(--marron);">
+                <a href="#" class="nav-link pt-3" style="color:var(--white)" >accueil</a>
+            </div>
+            <div class="nav-item px-1">
+                <a href="#" class="nav-link" style="color:var(--gris-foncé);">vente</a>
+            </div>
+            <div class="nav-item px-1">
+                <a href="#" class="nav-link" style="color:var(--gris-foncé);">location</a>
+            </div>
+            <div class="nav-item px-1">
+                <a href="#" class="nav-link" style="color:var(--gris-foncé);">contact</a>
+            </div>
+        </nav>
+        <!-- fin de barre de navigation -->  
+    </div>
+    <!-- fin background img -->
+
+    <!-- slogan -->
+    <div>
+        <section class="d-flex align-items-center" style="background-color:var(--gris-foncé); height: 100px; font-family:Montserrat;">
+            <p class="fs-2 text-uppercase fw-bold ps-3 pt-3 offset-md-1" style="color:var(--white);">club auto <span style="color: var(--marron);">le meilleur de l'automobile</span></p>
+        </section>
+    </div>
+    <!-- fin slogan -->
+
+    <main>
+        <article class="cont">
+            <section>
+
+            </section>
+        </article>
+    </main>
+
+
+    
+    <script src="/java/jquery-3.6.0.slim.js"></script>
+    <script src="/java/bootstrap.bundle.min.js"></script>
 </body>
 </html>
