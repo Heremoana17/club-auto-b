@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CLUB AUTO est un societer baser sur la vente et location de voiture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club Auto - Accueil</title>
     <link rel="icon" href="/photo/icone-du-site.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <style>
@@ -19,10 +20,24 @@
             --gris-foncé: #232628;
             --bleu: #6c98e1;
         }
+        .nv:hover{
+            background-color: #cc6119 !important;
+            color: #ffffff !important;
+        }
+        .accessibility{
+            position: absolute;
+            left: -15000px;
+        }
     </style>
 </head>
 <body>
     <header class="container-fluid" style="font-family:Montserrat;">
+
+        <!-- accessibility -->
+        <h1 class="accessibility">Menu principal</h1>
+        <p class="accessibility"><a href="#main" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+        <!-- fin accessibility -->
+
         <!-- premiere barre du header -->
         <section class="row  pt-4 pb-2" style="font-size: 0.7em; background-color: var(--gris-foncé); background-repeat: no-repeat;">
 
@@ -39,16 +54,16 @@
                   <div class="collapse navbar-collapse " id="barredenav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">accueil</a>
+                        <a class="nav-link" href="/index.html">accueil</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">vente</a>
+                        <a class="nav-link" href="/vente.html">vente</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">location</a>
+                        <a class="nav-link" href="/location.html">location</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="/contact.html">contact</a>
                       </li>
                     </ul>
                   </div>
@@ -84,11 +99,11 @@
             </div>
 
             <div class="col-12 d-none col-lg-2 d-lg-block text-uppercase text-light">
-                <a href="">
-                    <img src="/photo/icon-fb.png" alt="" class="px-2" style="height: 40px;">
+                <a href="#" style="text-decoration: none;">
+                    <img src="/photo/icon-fb.png" alt="icon-fb" class="px-2" style="height: 40px;">
                 </a>
-                <a href="">
-                    <img src="/photo/icon-tw.png" alt="" class="px-2" style="height: 40px;">
+                <a href="#">
+                    <img src="/photo/icon-tw.png" alt="icon-tw" class="px-2" style="height: 40px;">
                 </a>
             </div>
         </section>
@@ -99,17 +114,17 @@
     <div class="container-fluid bg-image d-none d-md-block" style="background-image:url(/photo/vehicule1.jpg); background-repeat: no-repeat; background-size: cover; height: 600px; font-family:Montserrat;"> 
         <!-- barre de navigation -->
         <nav class="nav text-uppercase fw-semibold align-items-center bg-white bg-opacity-75" style="font-size: 0.8em; height: 50px; margin-left:-12px; margin-right: -12px;">
-            <div class="nav-item h-100 offset-7 px-1" style="background-color: var(--marron);">
-                <a href="#" class="nav-link pt-3" style="color:var(--white)" >accueil</a>
+            <div class="nav-item offset-7" style="background-color: var(--marron);" title="Vous-y etes">
+                <a href="/index.html" class="nav-link nv pt-3 text-center" style="color:var(--white); height: 50px; width: 100px;" >accueil</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">vente</a>
+            <div class="nav-item " title="Cliquer pour voir les ventes">
+                <a href="/vente.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;">vente</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">location</a>
+            <div class="nav-item " title="Cliquer pour voir les locations">
+                <a href="/location.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;">location</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">contact</a>
+            <div class="nav-item " title="Vers la page pour nous contacter">
+                <a href="/contact.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;">contact</a>
             </div>
         </nav>
         <!-- fin de barre de navigation -->  
@@ -124,7 +139,7 @@
     </div>
     <!-- fin slogan -->
 
-    <main class="container-fluid">
+    <main class="container-fluid" id="main">
         <!-- article1 -->
         <article class="container-fluid mb-4">
             <section class="row my-4 p-md-5 d-flex justify-content-center">
@@ -169,14 +184,18 @@
     <!-- section louez-achetez -->
     <section class="container-fluid bg-image" style="background-image:url(/photo/vente-location.jpg); background-repeat: no-repeat; background-size: cover;">
         <div class="row d-flex justify-content-center " style="font-family: montserrat; font-size: 0.8em; padding-top:110px; padding-bottom: 120px;">
-            <div class="col-12 col-md-4 p-5 container-fluid" style="background-color:var(--orange); height: 250px; ; margin:15px;">
-                <h3 class="fw-bold pt-2">Vous souhaitez louer ?</h3>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum iure labore eaque nihil et quod exercitationem quibusdam, ab in eligendi, doloremque quae velit ipsum sequi, illo eos eius officia.</p> 
-            </div>
-            <div class="col-12 col-md-4 p-5 container-fluid" style="background-color:var(--rouge); height: 250px; margin:15px;">
-                <h3 class="fw-bold pt-2">Vous souhaitez achetez ?</h3>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum iure labore eaque nihil et quod exercitationem quibusdam, ab in eligendi, doloremque quae velit ipsum sequi, illo eos eius officia.</p> 
-            </div>
+            <a href="/location.html" class="col-12 col-md-4 p-5 container-fluid" style="background-color:var(--orange); height: 250px; ; margin:15px; text-decoration: none;" title="Pour vous dirigez vers les locations">
+                <div>
+                    <h3 class="fw-bold pt-2" style="color:var(--gris-foncé);">Vous souhaitez louer ?</h3>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum iure labore eaque nihil et quod exercitationem quibusdam, ab in eligendi, doloremque quae velit ipsum sequi, illo eos eius officia.</p> 
+                </div>
+            </a>
+            <a href="/vente.html" class="col-12 col-md-4 p-5 container-fluid" style="background-color:var(--rouge); height: 250px; margin:15px; text-decoration: none;" title="Pour vous dirigez vers les ventes">
+                <div>
+                    <h3 class="fw-bold pt-2" style="color:var(--gris-foncé);">Vous souhaitez achetez ?</h3>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum iure labore eaque nihil et quod exercitationem quibusdam, ab in eligendi, doloremque quae velit ipsum sequi, illo eos eius officia.</p> 
+                </div>
+            </a>
         </div>
     </section>
     <!-- fin section louez-achetez -->
@@ -186,31 +205,37 @@
         <h2 class="fw-bold text-center pt-3">vehicules recents</h2>
         <div class="col-10 row d-flex justify-content-between mx-auto" style="border-top:solid 3px var(--marron); padding-top:30px; margin-top: 12px;">
             <section class="container-fluid p-0 m-0" style="width:350px;">
-                <div class="" style="width:350px;">
-                    <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
-                </div>
-                <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
-                    <p class="col-8 mt-1">bmw 535i, navi, leather, abs</p>
-                    <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; padding-top: 11px;">5 500 &euro;</p>
-                </div>
+                <a href="/details vehicule.html" target="_blank" style="text-decoration: none; color:var(--white);" title="Cliquer pour plus de détails">
+                    <div class="" style="width:350px;">
+                        <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
+                    </div>
+                    <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
+                        <p class="col-8 mt-1">bmw 535i, navi, leather, abs</p>
+                        <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; padding-top: 11px;">5 500 &euro;</p>
+                    </div>
+                </a>
             </section>
             <section class="container-fluid p-0 m-0 d-none d-md-block" style="width:350px;">
-                <div class="" style="width:350px;">
-                    <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
-                </div>
-                <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
-                    <p class="col-8 mt-1">bmw 535i, navi, leather, abs</p>
-                    <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; padding-top: 11px;">8 000 &euro;</p>
-                </div>
+                <a href="/details vehicule.html" target="_blank" style="text-decoration: none; color:var(--white);" title="Cliquer pour plus de détails">
+                    <div class="" style="width:350px;">
+                        <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
+                    </div>
+                    <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
+                        <p class="col-8 mt-1">bmw 535i, navi, leather, abs</p>
+                        <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; padding-top: 11px;">8 000 &euro;</p>
+                    </div>
+                </a>
             </section>
             <section class="container-fluid p-0 m-0 d-none d-md-block" style="width:350px;">
-                <div class="" style="width:350px;">
-                    <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
-                </div>
-                <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
-                    <p class="col-8 mt-1">ford explorer 2015 4wd</p>
-                    <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; height: 55px; padding-top: 5px;"><span class="text-decoration-line-through" style="color:var(--gris-foncé); font-weight:500; font-size: 0.9em;">9 000 &euro;</span> 8 200 &euro;</p>
-                </div>
+                <a href="/details vehicule.html" target="_blank" style="text-decoration: none; color:var(--white);" title="Cliquer pour plus de détails">
+                    <div class="" style="width:350px;">
+                        <img src="/photo/vehicule2.jpg" alt="vehicule2" class="img-fluid">
+                    </div>
+                    <div class="text-uppercase row mx-0 mt-3 p-3" style="background-color:gray; width:350px;">
+                        <p class="col-8 mt-1">ford explorer 2015 4wd</p>
+                        <p class="col-4 ms-3" style="background-color:var(--bleu);height:45px; width: 90px; height: 55px; padding-top: 5px;"><span class="text-decoration-line-through" style="color:var(--gris-foncé); font-weight:500; font-size: 0.9em;">9 000 &euro;</span> 8 200 &euro;</p>
+                    </div>
+                </a>
             </section>
         </div>
     </section>
@@ -258,7 +283,7 @@
             </div>
         </div>
         <div class="text-center my-4">
-            <a href="" role="button" class="btn text-uppercase text-white fw-bold p-3" style="background-color:var(--bleu); text-decoration: none; font-size: 0.9em; width: 220px;">contactez nous
+            <a href="/contact.html" target="_blank" role="button" class="btn text-uppercase text-white fw-bold p-3" style="background-color:var(--bleu); text-decoration: none; font-size: 0.9em; width: 220px;" title="Contactez-nous">contactez nous
             </a>
         </div>
     </secction>
@@ -290,9 +315,9 @@
                     <h6 class="text-uppercase">newsletter</h6>
                     <form action="" class="">
                         <div class="input-group" style="width:250px;">
-                            <input type="email" name="newsletter" placeholder="Entrez votre email" class="form-control" >
-                            <div class="input-group-append">
-                                <button class="btn" style="background-color:var(--marron);"><img src="/photo/icone-news.png" alt="" style="width:30px;"></button>
+                            <input type="email" name="newsletter" placeholder="Entrez votre email" class="form-control" title="Entrer une adresse mail valide">
+                            <div class="input-group-append" style="margin-left:-3px;">
+                                <button class="btn" style="background-color:var(--marron);" title="Cliquez pour envoyer vos e-mail et recevoir les dernières offres"><img src="/photo/icone-news.png" alt="" style="width:30px;"></button>
                             </div>
                         </div>
                     </form>
@@ -301,11 +326,21 @@
                 <div class="col-12 col-md-3 m-0">
                     <h6 class="text-uppercase">reseaux sociaux</h6>
                     <div class="row ">
-                        <img class="p-1" src="/photo/icon-fb.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-tw.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-inst.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-g+.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-yt.png" alt="" style="width:60px;">
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-fb.png" alt="" style="width:60px;" title="vers la page facebook">
+                        </a>
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-tw.png" alt="" style="width:60px;" title="vers la page twytter">
+                        </a>
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-inst.png" alt="" style="width:60px;" tittle="vers la page instagram">
+                        </a>
+                        <a href=""  class="p-0 col">
+                            <img class="p-1" src="/photo/icon-g+.png" alt="" style="width:60px;" title="vers la page google+">
+                        </a>
+                        <a href=""  class="p-0 col">
+                            <img class="p-1" src="/photo/icon-yt.png" alt="" style="width:60px;" title="vers la page youtube">
+                        </a>
                     </div>
                 </div>
             </section>

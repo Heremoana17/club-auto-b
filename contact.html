@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CLUB AUTO est un societer baser sur la vente et location de voiture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club Auto - Contact</title>
     <link rel="icon" href="/photo/icone-du-site.png">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -20,15 +21,15 @@
             --gris-foncé: #232628;
             --bleu: #6c98e1;
         }
-        .detail:focus{
-            border-top: solid 3px var(--marron) !important;
-            color: var(--gris-foncé) !important;
-            font-weight: 700 !important;
+        .nv:hover{
+            background-color: #cc6119 !important;
+            color: #ffffff !important;
         }
     </style>
 </head>
 <body>
     <header class="container-fluid" style="font-family:Montserrat;">
+
         <!-- premiere barre du header -->
         <section class="row  pt-4 pb-2" style="font-size: 0.7em; background-color: var(--gris-foncé); background-repeat: no-repeat;">
 
@@ -42,19 +43,19 @@
                       </button>
                       <div class="collapse navbar-collapse " id="barredenav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">accueil</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">vente</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">location</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                          </li>
-                        </ul>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/index.html">accueil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/vente.html">vente</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/location.html">location</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/contact.html">contact</a>
+                            </li>
+                          </ul>
                       </div>
                     </div>
                 </nav>
@@ -89,11 +90,11 @@
             </div>
 
             <div class="col-12 d-none col-lg-2 d-lg-block text-uppercase text-light">
-                <a href="">
-                    <img src="/photo/icon-fb.png" alt="" class="px-2" style="height: 40px;">
+                <a href="#" style="text-decoration: none;">
+                    <img src="/photo/icon-fb.png" alt="icon-fb" class="px-2" style="height: 40px;">
                 </a>
-                <a href="">
-                    <img src="/photo/icon-tw.png" alt="" class="px-2" style="height: 40px;">
+                <a href="#">
+                    <img src="/photo/icon-tw.png" alt="icon-tw" class="px-2" style="height: 40px;">
                 </a>
             </div>
         </section>
@@ -106,18 +107,18 @@
     <div class="bg-imge" style="background-image:url(/photo/vehicule3.jpg); background-size: cover; background-position:top; background-repeat: no-repeat; height:350px;">
     <!-- fin de background img -->
     <div class="container-fluid d-none d-md-block" style=" font-family:Montserrat;">
-        <nav class="nav text-uppercase fw-bold align-items-center bg-white bg-opacity-75 shadow" style="font-size: 0.8em; height: 50px; margin-left:-12px; margin-right:-12px;" >
-            <div class="nav-item offset-7 px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">accueil</a>
+        <nav class="nav text-uppercase fw-semibold align-items-center bg-white bg-opacity-75" style="font-size: 0.8em; height: 50px; margin-left:-12px; margin-right: -12px;">
+            <div class="nav-item offset-7" title="Vous-y etes">
+                <a href="/index.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;" >accueil</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link " style="color:var(--gris-foncé);">vente</a>
+            <div class="nav-item " title="Cliquer pour voir les ventes">
+                <a href="/vente.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;">vente</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">location</a>
+            <div class="nav-item " title="Cliquer pour voir les locations">
+                <a href="/location.html" class="nav-link nv pt-3 text-center" style="color:var(--gris-foncé); height: 50px; width: 100px;">location</a>
             </div>
-            <div class="nav-item px-1">
-                <a href="#" class="nav-link" style="color:var(--gris-foncé);">contact</a>
+            <div class="nav-item " style="background-color: var(--marron);" title="Vers la page pour nous contacter">
+                <a href="/contact.html" class="nav-link nv pt-3 text-center" style="color:var(--white); height: 50px; width: 100px;">contact</a>
             </div>
         </nav>
     </div>
@@ -125,34 +126,34 @@
     </div>
 
     <main class="container-fluid" style="font-family: montserrat">
-        <div style="">
+        <div>
             <div class="col-10 offset-1 p-5 bg-white" style="margin-top:-150px; box-shadow: 2px 6px 35px -2px rgba(0,0,0,0.3);">
                 <h2 class="text-uppercase fw-bold ps-4">contactez nous</h2>
-                <form action="" class="p-4 row d-flex flex-column flex-md-row" style="">
+                <form action="" class="p-4 row d-flex flex-column flex-md-row">
                     <div class="col-8 row">
                         <div class="col-12 col-md-6 mt-3">
                             <label class="col-12" for="prenom" style="font-weight:600;">Prénom*</label>
-                            <input class="p-3 " type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" style="border:none;">
+                            <input class="p-3 " type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" style="border:none;" required autofocus tabindex="1" title="Entrer votre prénom">
                         </div>
                         <div class="col-12 col-md-6 mt-3">
                             <label class="col-12" for="nom" style="font-weight:600;">Nom*</label>
-                            <input class="p-3" type="text" id="nom" name="nom" placeholder="Entrez votre nom" style="border:none;">
+                            <input class="p-3" type="text" id="nom" name="nom" placeholder="Entrez votre nom" style="border:none;" required tabindex="2" title="entrer votre nom">
                         </div>
                         <div class="col-12 col-md-6 mt-3">
                             <label class="col-12" for="email" style="font-weight:600;">Email*</label>
-                            <input class="p-3" type="email" id="email" placeholder="Entrez une adresse mail valide" style="border:none;">
+                            <input class="p-3" type="email" id="email" placeholder="Entrez une adresse mail valide" style="border:none;" required tabindex="3" title="entrer votre email">
                         </div>
                         <div class="col-12 col-md-6 mt-3">
                             <label class="col-12" for="téléphone" style="font-weight:600;">Téléphone</label>
-                            <input class="p-3" type="tel" id="téléphone" placeholder="Phone number" style="border:none;">
+                            <input class="p-3" type="tel" id="téléphone" placeholder="Phone number" style="border:none;" required tabindex="4" title="entrer votre numero de telephone">
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mt-3 ps-md-4">
                         <label for="textarea" style="font-weight:600;"> Message</label>
-                        <textarea class="col-12 p-3" name="message" id="textarea" placeholder="Ecrivez votre message" cols="33" rows="2" style="resize:none; border: none; height: 150px;"></textarea>
+                        <textarea class="col-12 p-3" name="message" id="textarea" placeholder="Ecrivez votre message" cols="33" rows="2" style="resize:none; border: none; height: 150px;" required tabindex="5" title="Decrivez votre requete"></textarea>
                     </div>
                     <div class=" col-4 offset-md-8 mt-3 ps-0">
-                        <button class="btn fw-bold text-white px-4 py-2" type="submit" style="background-color:var(--bleu);">ENVOYEZ</button>
+                        <button class="btn fw-bold text-white px-4 py-2" type="submit" style="background-color:var(--bleu);" tabindex="6" title="Cliquez ici une fois le formulaire renplit">ENVOYEZ</button>
                     </div>
                 </form>
             </div>
@@ -176,9 +177,9 @@
                     <h6 class="text-uppercase">newsletter</h6>
                     <form action="" class="">
                         <div class="input-group" style="width:250px;">
-                            <input type="email" name="newsletter" placeholder="Entrez votre email" class="form-control" >
-                            <div class="input-group-append">
-                                <button class="btn" style="background-color:var(--marron);"><img src="/photo/icone-news.png" alt="" style="width:30px;"></button>
+                            <input type="email" name="newsletter" placeholder="Entrez votre email" class="form-control" title="Entrer une adresse mail valide">
+                            <div class="input-group-append" style="margin-left:-3px;">
+                                <button class="btn" style="background-color:var(--marron);" title="Cliquez pour envoyer vos e-mail et recevoir les dernières offres"><img src="/photo/icone-news.png" alt="" style="width:30px;"></button>
                             </div>
                         </div>
                     </form>
@@ -187,11 +188,21 @@
                 <div class="col-12 col-md-3 m-0">
                     <h6 class="text-uppercase">reseaux sociaux</h6>
                     <div class="row ">
-                        <img class="p-1" src="/photo/icon-fb.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-tw.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-inst.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-g+.png" alt="" style="width:60px;">
-                        <img class="p-1" src="/photo/icon-yt.png" alt="" style="width:60px;">
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-fb.png" alt="" style="width:60px;" title="vers la page facebook">
+                        </a>
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-tw.png" alt="" style="width:60px;" title="vers la page twytter">
+                        </a>
+                        <a href="" class="p-0 col">
+                            <img class="p-1" src="/photo/icon-inst.png" alt="" style="width:60px;" tittle="vers la page instagram">
+                        </a>
+                        <a href=""  class="p-0 col">
+                            <img class="p-1" src="/photo/icon-g+.png" alt="" style="width:60px;" title="vers la page google+">
+                        </a>
+                        <a href=""  class="p-0 col">
+                            <img class="p-1" src="/photo/icon-yt.png" alt="" style="width:60px;" title="vers la page youtube">
+                        </a>
                     </div>
                 </div>
             </section>
