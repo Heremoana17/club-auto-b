@@ -20,6 +20,11 @@
     position: absolute;
     left: -15000px;
 }
+.detail:focus{
+    border-top: solid 3px var(--marron) !important;
+    color: var(--gris-foncé) !important;
+    font-weight: 700 !important;
+}
 
 /************************************************* styles du header des pages *************************************************/
 
@@ -262,7 +267,7 @@
 /***********************************************************Fin des style pour la page index*****************************************/
 
 
-/***********************************************************styles pour la page vente************************************************/
+/***********************************************************styles pour la page vente et location************************************************/
 /******************************** background img ******************************/
 #divBackgroundImageVenteLocation{
     background-image:url(/photo/vente-location.jpg); 
@@ -273,14 +278,14 @@
     height: 240px; 
     font-family:Montserrat;
 }
-/****************** barre de navigation */
+/****************** barre de navigation *****************************************/
 #navVenteLocation{
     margin-top: -240px; 
     z-index: 100; 
     position: absolute; 
     font-family:Montserrat;
 }
-/****************** slogan dans l'image de fon et background img en responssive*/
+/****************** slogan dans l'image de fon et background img en responssive**********/
 .sloganBackgroundImage{
     font-family: Montserrat;
 }
@@ -292,13 +297,18 @@
     margin-left: 150px;
 }
 .sloganBackgroundImage div{
-    background-image:url(photo/vente-location.jpg); 
+    background-image:url(/photo/vente-location.jpg); 
     background-size: cover; 
     filter:brightness(70%); 
     height: 340px; 
     font-family:Montserrat;
 }
-/******************** Style pour le main */
+#sloganBackgroundImageH2{
+    margin-top: 120px;
+}
+
+
+/******************** Style pour le main ********************************/
 #choixMultiple{
     font-family: open sans;
 }
@@ -309,7 +319,7 @@
     border:none; 
     font-size:0.9em
 }
-/************style pour liste de produit*/
+/************style pour liste de produit********************************/
 .divInfoListeProduit{
     font-family:montserrat;
 }
@@ -332,16 +342,97 @@
     font-family: open sans; 
     color:#232628
 }
+/******************** Fin style pour le main ********************************/
 
+/**********************style pour le aside***********************************/
+#aside{
+    margin-top: -30px; 
+    font-family: montserrat; 
+    z-index: 100;
+}
+#asideEntete{
+    background-color:var(--gris-foncé);
+}
+#asideEntete img{
+    width:50px;
+}
+.selectAside{
+    border: none; 
+    width: 80%;
+}
+.reinitialiserAside{
+    border: none; 
+    color: #ffffff; 
+    background-color: #6c98e1; 
+    width: 200px; 
+    height: 50px;
+}
+/******************************fin style pour le aside***********************************/
 
+/***********************************************************fin styles pour la page vente et location************************************************/
 
+/***********************************************************styles pour la page détailsvehicule******************************************************/
+/*style pour le fil d'ariane*/
+#mainDetailVehicule ol{
+    font-size:0.8em;
+}
+/*style pour la section du titre et photo du produit*/
+#mainDetailVehicule section{
+    font-family: montserrat;
+}
+/*style pour le descriptif du produit*/
+#descriptifmainDetailVehicule{
+    background-color:var(--gris-foncé);
+}
+#descriptifmainDetailVehicule button{
+    color:var(--white); 
+    font-weight: 500; 
+    height: 50px; 
+    margin-top:-2px;
+}
+#divMytabContent{
+    font-family: open sans;
+}
+#enteteDescription{
+    font-size: 1.2em;
+}
+#divMytabContent div div {
+    border-left:solid 4px var(--marron); 
+    font-style: italic;
+}
+#divMytabContent div h6{
+    font-family:montserrat;
+}
+#divMytabContent div ul{
+    list-style-image:url(/photo/V.png);
+}
 
+/***********************************************************fin styles pour la page détailsvehicule******************************************************/
 
+/***********************************************************style pour la page contact*******************************************************************/
+#mainContact{
+    font-family: montserrat
+}
+#mainContact > div {
+    margin-top:-150px; 
+    box-shadow: 2px 6px 35px -2px rgba(0,0,0,0.3);
+}
+.mainContactLabel{
+    font-weight:600;
+}
+.mainContactInput{
+    border:none;
+}
+#mainContact textarea{
+    resize:none; 
+    border: none; 
+    height: 150px;
+}
+#mainContact button{
+    background-color:var(--bleu);
+}
 
-
-
-
-
+/***********************************************************fin style pour la page contact*******************************************************************/
 
 /***********************************************************style pour le footer*****************************************************/
 footer{
