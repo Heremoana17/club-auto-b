@@ -149,6 +149,10 @@
 #sectionLouezAchetez a{
     font-family: montserrat; 
     font-size: 0.8em; 
+    transition: 0.5s;
+}
+#sectionLouezAchetez a:hover{
+    transform: scale(1.05);
 }
 #sectionLouezAchetez #louez{
     background-color:var(--orange); 
@@ -182,6 +186,10 @@
 /********classe pour chaque card************/
 .cards{
     width:350px;
+    transition: 0.5s;
+}
+.cards:hover{
+    transform: scale(1.05);
 }
 .cards a{
     text-decoration: none; 
@@ -284,6 +292,12 @@
     z-index: 100; 
     position: absolute; 
     font-family:Montserrat;
+}
+#navVenteLocationNav{
+    font-size: 0.8em; 
+    height: 50px; 
+    margin-left:-12px; 
+    margin-right: -12px;
 }
 /****************** slogan dans l'image de fon et background img en responssive**********/
 .sloganBackgroundImage{
@@ -410,6 +424,22 @@
 /***********************************************************fin styles pour la page détailsvehicule******************************************************/
 
 /***********************************************************style pour la page contact*******************************************************************/
+#divBackgroundImageContact{
+    background-image:url(/photo/vehicule3.jpg);
+    background-size: cover; 
+    background-position:top; 
+    background-repeat: no-repeat; 
+    height:350px;
+}
+#navContact{
+    font-family:Montserrat
+}
+#navContactNav{
+    font-size: 0.8em; 
+    height: 50px; 
+    margin-left:-12px; 
+    margin-right: -12px;
+}
 #mainContact{
     font-family: montserrat
 }
